@@ -13,7 +13,7 @@ sections:
         label: Meet Us  
         url: people
       text: |
-        TAIL (Trustworthy AI Lab) is a laboratory dedicated to trustworthy artificial intelligence research, affiliated with the School of Software Engineering at East China Normal University. Our goal is to develop safe, reliable, and transparent AI systems.
+        TIC is a laboratory dedicated to trustworthy artificial intelligence research, affiliated with the School of Software Engineering at East China Normal University. Our goal is to develop safe, reliable, and transparent AI systems.
 
         Our research directions include:
         - Neural network robustness
@@ -45,7 +45,7 @@ sections:
     design:
       view: card
       columns: '1'
-    
+  
   - block: markdown
     content:
       title:
