@@ -1,7 +1,7 @@
 ---
 abstract: Add abstract here
 slides: ""
-url_pdf: ""
+url_pdf: "https://arxiv.org"
 title: conference paper模板
 authors:
   - Sam(用英文逗号分隔)
@@ -12,9 +12,6 @@ publication_types:
 publication: XXX Conference
 publishDate: '2017-01-01T00:00:00Z'
 summary: summary...
-url_dataset: https://github.com
-url_project: ""
-url_source: https://baidu.com
 url_video: https://youtube.com
 featured: false
 url_slides: ""

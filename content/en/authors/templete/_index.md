@@ -1,13 +1,13 @@
 ---
 organizations:
-  - name: East China Normal University
+  - name: organization1
+  - name: organization2
 superuser: true
 title: Member模板
-role: templete
+role: role
 avatar: avatar.png
-bio: biooooooooo
+bio: null
 interests:
-  - AI
   - Sports
   - Programming
   - (请使用英文逗号分隔)
@@ -28,7 +28,7 @@ education:
       institution: East China Normal University
       year: 2023
 user_groups:
-  - Master Students
+  - Admin
 _build:
   list: always
 last_name: null
