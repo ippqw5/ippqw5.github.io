@@ -7,13 +7,13 @@ en:
   languageCode: en-us
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
   contentDir: content/en
-  title: TIC Lab
+  title: TIC LAB
 
 # Uncomment the lines below to configure your website in a second language.
-# zh:
-#   languageCode: zh-Hans
-#   contentDir: content/zh
-#   title: 让我们说中文
-#   params:
-#     description: Site description in Chinese...
+zh:
+  languageCode: zh-Hans
+  contentDir: content/en
+  title: TIC LAB
+  # params:
+  #   description: Site description in Chinese...
 
