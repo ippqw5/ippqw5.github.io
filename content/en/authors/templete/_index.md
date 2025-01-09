@@ -1,10 +1,9 @@
 ---
 organizations:
-  - name: organization1
-  - name: organization2
+  - name: East China Normal University
 superuser: true
 title: Member模板
-role: role
+role: 
 avatar: avatar.png
 bio: null
 interests:
@@ -28,13 +27,10 @@ education:
       institution: East China Normal University
       year: 2023
 user_groups:
-  - Admin
-_build:
-  list: always
-last_name: null
-highlight_name: false
-first_name: admin
+  - ' '
 email: ""
+_build:
+  list: never
 ---
 ## 详细介绍，显示在个人主页。支持markdown格式。
 

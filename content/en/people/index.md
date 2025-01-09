@@ -14,7 +14,7 @@ sections:
           - Master Students
           - Undergraduate Students
           - Visiting Scholars
-          - Admin
+          - ' '
       sort_by: Params.last_name
       sort_ascending: true
     design:

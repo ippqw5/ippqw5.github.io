@@ -87,9 +87,6 @@
     {{ $ctnr = "universal-wrapper" }}
   {{end}}
 <div class="{{$ctnr}} pt-3">
-  {{ if eq $title "Posts" }}
-    {{ $title = "News" }}
-  {{end}}
   <h1>{{ $title }}</h1>
 
   {{ with $page.Params.subtitle }}
