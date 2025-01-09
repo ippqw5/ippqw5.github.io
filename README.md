@@ -1,12 +1,12 @@
 # 可信AI实验室
 
-主页：[tic-lab.club](https://tic-lab.club)
+主页：[www.tic-lab.club](https://www.tic-lab.club)
 
 ## 添加：成员/活动/新闻/学术成果
 
 下面以添加 `成员` 为例
 
-### 1. 进入后台管理页面 [https://tic-lab.netlify.app/admin/](https://tic-lab.netlify.app/admin/)
+### 1. 进入后台管理页面 [https://www.tic-lab.club/admin](https://www.tic-lab.club/admin)
 
 注册一个账号或者使用github登录：
 ![cms_login](./assets/media/login.png)

@@ -6,3 +6,7 @@
 public/
 assets/jsconfig.json
 themes/
+
+go.sum
+hugo.exe
+.hugo_build.lock
