@@ -4,9 +4,23 @@
 #   The weight parameter defines the order that the links will appear in.
 
 main:
-  - name: Members
+  - name: Research Topics
+    url: topic
+    weight: 10
+    
+  - identifier: group
+    name: Members
     url: people
     weight: 20
+  - name: Prof. XXX
+    url: author/templete
+    parent: group
+    weight: 10
+  - name: Group Members
+    url: people
+    parent: group
+    weight: 20
+
   - name: News
     url: post
     weight: 30

@@ -6,7 +6,7 @@ aliases: Events
 #   1 = List
 #   2 = Compact
 #   3 = Card
-view: 2
+view: 3
 
 filters:
   sort_by: 'date'

@@ -1,7 +1,6 @@
 ---
 # Leave the homepage title empty to use the site title
-title:
-date: 2022-10-24
+title: home
 type: landing
 
 sections:
@@ -35,8 +34,8 @@ sections:
           link:
             icon: graduation-cap
             icon_pack: fas
-            text: Join Us
-            url: ../contact/
+            text: Our Research Topics
+            url: topic
     design:
       # Slide height is automatic unless you force a specific height (e.g. '400px')
       slide_height: '300px'
@@ -55,16 +54,16 @@ sections:
         label: Meet Us  
         url: people
       text: |
-        TIC is a laboratory dedicated to trustworthy artificial intelligence research, affiliated with the School of Software Engineering at East China Normal University. Our goal is to develop safe, reliable, and transparent AI systems.
+        **TIC** is a laboratory dedicated to trustworthy artificial intelligence research, affiliated with the School of Software Engineering at East China Normal University. Our goal is to develop safe, reliable, and transparent AI systems.
 
         Our research directions include:
-        - Neural Network Robustness Verification
-        - Reinforcement Learning Systems Verification
+        - Robustness verification and training of deep neural networks
+        - Reliability training and verification of reinforcement learning system
         - LLM Testing
   
   - block: collection
     content:
-      title: Publications
+      title: Latest Publications
       subtitle: ''
       text: ''
       # Choose how many pages you would like to display (0 = all pages)
@@ -96,7 +95,7 @@ sections:
   
   - block: collection
     content:
-      title: News
+      title: Latest News
       subtitle: ''
       text: ''
       # Choose how many pages you would like to display (0 = all pages)
@@ -126,23 +125,18 @@ sections:
       # Choose single or dual column layout
       columns: '2'
 
-  # - block: markdown
-  #   content:
-  #     title:
-  #     subtitle: ''
-  #     text:
-  #   design:
-  #     columns: '1'
-  #     background:
-  #       image: 
-  #         filename: disei.jpg
-  #         filters:
-  #           brightness: 1
-  #         parallax: false
-  #         position: center
-  #         size: cover
-  #         text_color_light: true
-  #     spacing:
-  #       padding: ['20px', '0', '20px', '0']
-  #     css_class: fullscreen
+
+  - block: portfolio
+    id: projects
+    content:
+      title: Main Research Topics
+      filters:
+        # Folders to display content from
+        folders:
+          - topic
+      design:
+        # Choose a listing view
+        view: compact
+        # Choose single or dual column layout
+        columns: '2'
 ---
