@@ -14,7 +14,10 @@ education:
     - course: Master in Software Engineering
       institution: East China Normal University
       year: 2023
+    - course: Undergraduate in Mathematics
+      institution: East China Normal University
+      year: 2019
 user_groups:
-  - Master
+  - Master Students
 ---
 ...

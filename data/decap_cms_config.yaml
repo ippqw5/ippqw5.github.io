@@ -76,10 +76,11 @@ collections:
         multiple: true
         options:
           - { label: "Faculty", value: "Faculty" }
-          - { label: "PhD Students", value: "PhD" }
-          - { label: "Master Students", value: "Master" }
-          - { label: "Undergraduate Students", value: "Undergraduate" }
+          - { label: "PhD", value: "PhD Students" }
+          - { label: "Master", value: "Master Students" }
+          - { label: "Undergraduate", value: "Undergraduate Students" }
           - { label: "Visiting Scholars", value: "Visiting Scholars" }
+          - { label: "Admin", value: " "}
       # - label: "Display"
       #   name: "_build"
       #   required: true
