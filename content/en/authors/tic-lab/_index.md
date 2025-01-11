@@ -2,35 +2,34 @@
 organizations:
   - name: East China Normal University
 superuser: true
-title: Member模板
-role: 
+title: tic-lab
+role: null
 avatar: avatar.png
 bio: null
 interests:
   - Sports
   - Programming
-  - (请使用英文逗号分隔)
 social:
   - display:
-      header: false
-    icon_pack: ai
+      header: true
+    icon_pack: fab
     link: https://scholar.google.com/
     icon: google-scholar
   - display:
-      header: false
+      header: true
     link: https://github.com/
     icon_pack: fab
     icon: github
 education:
   courses:
-    - course: Master in East China Normal University
+    - course: Master
       institution: East China Normal University
       year: 2023
 user_groups:
-  - ' '
-email: ""
+  - " "
 _build:
   list: never
+email: ""
 ---
 ## 详细介绍，显示在个人主页。支持markdown格式。
 

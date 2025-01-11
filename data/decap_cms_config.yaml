@@ -6,17 +6,17 @@ media_folder: 'assets/media'
 public_folder: '/media'
 
 collections:
-  - name: members # url: ../members
+  - name: members 
     label: 成员 # displayed name in UI
     label_singular: Member
     folder: 'content/en/authors'
     path: '{{slug}}/_index'
     create: true  
     filter: {field: "cms_exclude"}
-    fields:  # The fields each document in this collection have
-      - {label: "Display name (required)", name: "title", widget: "string", required: true}
-      - {label: "Role(such as Professor/Student)", name: "role", widget: "string", required: false}
-      - label: "Avatar (required)"
+    fields:  
+      - {label: "姓名", name: "title", widget: "string", required: true}
+      - {label: "角色(such as Professor/Student)", name: "role", widget: "string", required: false}
+      - label: "头像(图片命名必须为avatar.jpg或avatar.png, 大小写无所谓)"
         name: "avatar"
         widget: "image"
         required: true 
@@ -24,8 +24,8 @@ collections:
           config:
             multiple: false
       - {label: "Short Introduction", name: "bio", widget: "string", required: false}
-      - {label: "Full Introduction (support markdown/latex/html)", name: "body", widget: "markdown", required: false}
-      - label: "Interests"
+      - {label: "Full Introduction (支持markdown/latex/html)", name: "body", widget: "markdown", required: false}
+      - label: "Interests（可以填写多个兴趣，用英文逗号分割）"
         name: "interests"
         required: false
         widget: "list"
@@ -34,35 +34,27 @@ collections:
         required: false
         widget: list
         fields:
-          - {label: Link, name: link, widget: string, required: false}
+          - {label: Link, name: link, widget: string, required: false, default: "https://scholar.google.com/"}
           - label: Icon pack
             name: icon_pack
             widget: select
             multiple: false
+            default: "fab"
             options:
               - {label: "None", value: ""}
-              - {label: "Solid", value: "fas"}
-              - {label: "Regular", value: "far"}
+              # - {label: "Solid", value: "fas"}
+              # - {label: "Regular", value: "far"}
               - {label: "Brand", value: "fab"}
-              - {label: "Academic", value: "ai"}
-          - {label: Icon (see https://docs.hugoblox.com/getting-started/page-builder/#icons), name: icon, widget: string, required: false}
-          # - {label: Label (tooltip), name: label, widget: string, required: false}
-          # - label: Display in About widget and...
-          #   name: display
-          #   widget: object
-          #   fields:
-          #     - label: "Header (main menu)"
-          #       name: "header"
-          #       widget: "boolean"
-          #       default: false
-          #       required: false
+              # - {label: "Academic", value: "ai"}
+          - {label: Icon(see https://fontawesome.com/icons)常用icon：google-scholar，github, name: icon, widget: string, required: false, default: "google-scholar"}
       - label: "Organizations"
         name: "organizations"
         required: false
         widget: list
         fields:
-          - {label: Organization, name: name, widget: string, required: true}
-          - {label: Link, name: url, widget: string, required: false}
+          - {label: Organization, name: name, widget: string, required: true, default: "East China Normal University"}
+          # - {label: Link, name: url, widget: string, required: false}
+        
       - label: "Education"
         name: "education"
         required: false
@@ -79,7 +71,7 @@ collections:
       - {label: "Email", name: "email", widget: "string", required: false}
       - label: "Member Groups (可多选)"
         name: "user_groups"
-        required: false
+        required: true
         widget: "select"
         multiple: true
         options:
@@ -88,19 +80,18 @@ collections:
           - { label: "Master Students", value: "Master" }
           - { label: "Undergraduate Students", value: "Undergraduate" }
           - { label: "Visiting Scholars", value: "Visiting Scholars" }
-          - { label: "Admin", value: "Admin" }
-      - label: "Display"
-        name: "_build"
-        required: true
-        widget: "object"
-        fields: 
-        - label: "显示在members页面?"
-          name: "list"
-          widget: "select"
-          default: "always"
-          options:
-            - {label: "Yes", value: "always"}
-            - {label: "No", value: "never"}
+      # - label: "Display"
+      #   name: "_build"
+      #   required: true
+      #   widget: "object"
+      #   fields: 
+      #   - label: "显示在members页面?"
+      #     name: "list"
+      #     widget: "select"
+      #     default: "always"
+      #     options:
+      #       - {label: "Yes", value: "always"}
+      #       - {label: "No", value: "never"}
 
   - name: news
     label: 新闻
@@ -146,10 +137,10 @@ collections:
         required: false
         widget: object
         fields:
-          - label: "Upload an image named `featured.jpg/png`"
+          - label: "图片名必须为 featured.jpg/png (大小写无所谓)"
             name: "filename"
             widget: "image"
-            default: "featured"
+            # default: "featured"
             required: false
             media_library:
               config:
@@ -227,10 +218,10 @@ collections:
         required: false
         widget: object
         fields:
-          - label: "Upload an image named `featured.jpg/png`"
+          - label: "图片名必须为 featured.jpg/png (大小写无所谓)"
             name: "filename"
             widget: "image"
-            default: "featured"
+            # default: "featured"
             required: false
             media_library:
               config:
@@ -311,7 +302,7 @@ collections:
         required: false
         widget: object
         fields:
-          - label: "Upload an image"
+          - label: "图片名必须为 featured.jpg/png (大小写无所谓)"
             name: "filename"
             widget: "image"
             default: "featured"
@@ -340,10 +331,6 @@ collections:
         widget: "string"
         required: false
       
-
-
-
-  
   # - name: slides
   #   label: Slides
   #   label_singular: Slides

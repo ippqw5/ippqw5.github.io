@@ -1,7 +1,7 @@
 ---
 title: Events
 cms_exclude: false
-aliases: Events
+# aliases: Events
 # View.
 #   1 = List
 #   2 = Compact
@@ -11,8 +11,8 @@ view: 3
 filters:
   sort_by: 'date'
 # Optional header image (relative to `static/media/` folder).
-banner:
-  caption: ""
-  image: dishuihu.jpg
+# banner:
+#   caption: ""
+#   image: dishuihu.jpg
 
 ---

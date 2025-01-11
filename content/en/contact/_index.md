@@ -1,6 +1,6 @@
 ---
 title: Contact
-date: 2022-10-24
+date: 2025-01-11
 
 type: landing
 
@@ -9,10 +9,10 @@ sections:
     content:
       title: Contact
       # text: test test test
-      email: tic-lab@163.com
+      email: xxx@163.com
       #phone: 888 888 88 88
       address:
-        street: 111 nan mu road
+        street: 111 Nan Mu road
         city: Shanghai
         region: Pudong
         # postcode: '94305'

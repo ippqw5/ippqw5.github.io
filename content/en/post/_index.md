@@ -11,8 +11,8 @@ view: 2
 filters:
   sort_by: 'date'
 # Optional header image (relative to `static/media/` folder).
-banner:
-  caption: ""
-  image: disei.jpg
+# banner:
+#   caption: ""
+#   image: disei.jpg
 
 ---

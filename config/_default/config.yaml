@@ -1,0 +1,27 @@
+cascade:
+  - _target:
+      path: /topic/**
+    show_date: false # Show the page's date?
+    reading_time: true # Show estimated reading time?
+    share: false # Show social sharing links?
+    # Show author profile (photo and bio) under the content?
+    # Edit your author profiles in the `content/authors/` folder
+    # Then reference their folder names with the `authors` front matter option above
+    profile: false
+    # Allow users to comment on the page?
+    # Requires commenting to be configured in `params.yaml`
+    commentable: false
+    # Allow visitors to make improvements to the page?
+    # Requires a repository to be configured in `params.yaml`
+    editable: false
+    # Show a link to the next article in the series?
+    pager: false
+    # Show recommendations for related content?
+    show_related: false
+    # Show breadcrumb navigation?
+    show_breadcrumb: false
+    # Hide the navigation bar?
+    # Often used together with `show_breadcrumb`
+    header:
+      navbar:
+        enable: true

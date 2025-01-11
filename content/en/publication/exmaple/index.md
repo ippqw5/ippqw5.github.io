@@ -1,7 +1,7 @@
 ---
 abstract: Add abstract here
 slides: ""
-title: conference paper模板
+title: Conference Paper Exmaple
 authors:
   - Sam
   - Peter

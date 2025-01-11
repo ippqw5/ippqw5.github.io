@@ -1,5 +1,5 @@
 ---
-title: News模板
+title: News Example
 date: 2020-12-01
 featured: true
 image:

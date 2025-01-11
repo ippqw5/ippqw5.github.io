@@ -57,8 +57,7 @@ sections:
         **TIC** is a laboratory dedicated to trustworthy artificial intelligence research, affiliated with the School of Software Engineering at East China Normal University. Our goal is to develop safe, reliable, and transparent AI systems.
 
         Our research directions include:
-        - Robustness verification and training of deep neural networks
-        - Reliability training and verification of reinforcement learning system
+        - Verification And Training Of Neural Networks and RL Systems
         - LLM Testing
   
   - block: collection
@@ -129,14 +128,15 @@ sections:
   - block: portfolio
     id: projects
     content:
-      title: Main Research Topics
+      title: Research Topics
       filters:
         # Folders to display content from
         folders:
           - topic
+      sort_by: 'Title'
       design:
         # Choose a listing view
-        view: compact
+        view: card
         # Choose single or dual column layout
-        columns: '2'
+        columns: 1
 ---

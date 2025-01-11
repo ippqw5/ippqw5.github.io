@@ -1,6 +1,6 @@
 ---
 ### core metadata begin ###
-title: LLM Testing
+title: Verification And Training Of Neural Networks and RL Systems
 subtitle: 
 summary: 
 # authors: ["Member模板"] # authors: link to user profiles are located in `contented\authors\xxx\index.md`
