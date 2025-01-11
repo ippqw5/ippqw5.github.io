@@ -11,18 +11,19 @@
 注册一个账号或者使用github登录：
 ![cms_login](./assets/media/login.png)
 
-### 2. 选择 `模板`
+### 2. `New Member`
 
-进入到主界面后，选择模板：
-![cms_mainpage](./assets/media/cms_mainpage.png)
+进入到主界面后，选择`New Member`：
 
-进入表单页面，选择 `duplicate` 复制一份后，开始填写你自己的信息吧~
-![cms_new_author](image/README/1736134184277.png)
+![cms_mainpage](./assets/media/cms_new_author.png)
 
-### 3. 填写完成后，选择 `save`即可。系统会自动提交PR，等待管理员合并
+- 姓名和头像是必须填的，其他信息可以不填。
+- 上传头像时，请把文件名改为`avatar.jpg`或者`avatar.png`，然后再上传。
+
+### 3. 填写(修改)完成后，选择`save`即可。系统会自动提交PR到github仓库，等待管理员合并即可
 
 ![cms_new_author_save](./assets/media/cms_new_author_save.png)
 
-### 4. `save`之后显示如下界面，**不要点 `Publish` !!!**
+### 4. `save`之后显示如下界面，**请不要点 `Publish` !!!**
 
 ![cms_new_author_saved](./assets/media/cms_new_author_saved.png)
