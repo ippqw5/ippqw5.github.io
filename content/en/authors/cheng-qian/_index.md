@@ -19,5 +19,6 @@ education:
     - course: Undergraduate in Mathematics
       institution: East China Normal University
       year: 2019
+email: ippqw5@163.com
 ---
 ...
