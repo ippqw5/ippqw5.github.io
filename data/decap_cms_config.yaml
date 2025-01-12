@@ -15,7 +15,18 @@ collections:
     filter: {field: "cms_exclude"}
     fields:  
       - {label: "姓名", name: "title", widget: "string", required: true}
-      - {label: "角色(such as Professor/Student)", name: "role", widget: "string", required: false}
+      - label: "成员分组"
+        name: "user_groups"
+        required: true
+        widget: "select"
+        multiple: true
+        options:
+          - { label: "Faculty", value: "Faculty" }
+          - { label: "PhD", value: "PhD Students" }
+          - { label: "Master", value: "Master Students" }
+          - { label: "Undergraduate", value: "Undergraduate Students" }
+          - { label: "Visiting Scholars", value: "Visiting Scholars" }
+          # - { label: "Admin", value: " "}
       - label: "头像(图片命名必须为avatar.jpg或avatar.png, 大小写无所谓)"
         name: "avatar"
         widget: "image"
@@ -23,6 +34,13 @@ collections:
         media_library:
           config:
             multiple: false
+      - label: "角色(such as Professor/Student)"
+        name: "role"
+        required: false
+        widget: "select"
+        options:
+          - {label: "Professor", value: "Professor"}
+          - {label: "Student", value: "Student"}
       - {label: "Short Introduction", name: "bio", widget: "string", required: false}
       - {label: "Full Introduction (支持markdown/latex/html)", name: "body", widget: "markdown", required: false}
       - label: "Interests（可以填写多个兴趣，用英文逗号分割）"
@@ -46,7 +64,7 @@ collections:
               # - {label: "Regular", value: "far"}
               - {label: "Brand", value: "fab"}
               # - {label: "Academic", value: "ai"}
-          - {label: Icon(see https://fontawesome.com/icons)常用icon：google-scholar，github, name: icon, widget: string, required: false, default: "google-scholar"}
+          - {label: Icon(see https://fontawesome.com/icons). 常用icon "google-scholar" "github", name: icon, widget: string, required: false, default: "google-scholar"}
       - label: "Organizations"
         name: "organizations"
         required: false
@@ -69,18 +87,7 @@ collections:
               - {label: Institution, name: institution, widget: string, required: true}
               - {label: Year, name: year, widget: number, value_type: int, required: false}
       - {label: "Email", name: "email", widget: "string", required: false}
-      - label: "Member Groups (可多选)"
-        name: "user_groups"
-        required: true
-        widget: "select"
-        multiple: true
-        options:
-          - { label: "Faculty", value: "Faculty" }
-          - { label: "PhD", value: "PhD Students" }
-          - { label: "Master", value: "Master Students" }
-          - { label: "Undergraduate", value: "Undergraduate Students" }
-          - { label: "Visiting Scholars", value: "Visiting Scholars" }
-          - { label: "Admin", value: " "}
+
       # - label: "Display"
       #   name: "_build"
       #   required: true

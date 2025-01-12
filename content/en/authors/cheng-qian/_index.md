@@ -1,7 +1,9 @@
 ---
 title: Cheng Qian
-role: student
+user_groups:
+  - Master Students
 avatar: avatar.jpg
+role: Student
 bio: ...
 social:
   - link: https://github.com/ippqw5
@@ -17,7 +19,5 @@ education:
     - course: Undergraduate in Mathematics
       institution: East China Normal University
       year: 2019
-user_groups:
-  - Master Students
 ---
 ...
