@@ -4,7 +4,7 @@
 
 信息管理页面：[www.tic-lab.club/admin]() 。github账号登录 or 点击`sign up`注册。
 
-![cms_login](https://file+.vscode-resource.vscode-cdn.net/d%3A/TAIL/assets/media/login.png)
+![cms_login](./assets/media/login.png)
 
 ## 录入成员为例
 
