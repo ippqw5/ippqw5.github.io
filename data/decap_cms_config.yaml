@@ -2,8 +2,9 @@ backend:
   name: git-gateway
   branch: main
   squash_merges: true
+  publish_mode: editorial_workflow
 media_folder: 'assets/media'
-public_folder: '/media'
+public_folder: 'assets/media'
 
 collections:
   - name: members 
@@ -34,6 +35,7 @@ collections:
         media_library:
           config:
             multiple: false
+          
       - label: "角色(such as Professor/Student)"
         name: "role"
         required: false
@@ -41,9 +43,9 @@ collections:
         options:
           - {label: "Professor", value: "Professor"}
           - {label: "Student", value: "Student"}
-      - {label: "Short Introduction", name: "bio", widget: "string", required: false}
-      - {label: "Full Introduction (支持markdown/latex/html)", name: "body", widget: "markdown", required: false}
-      - label: "Interests（可以填写多个兴趣，用英文逗号分割）"
+      - {label: "一句话介绍自己", name: "bio", widget: "string", required: false}
+      - {label: "更加详细地介绍自己 (支持markdown/latex/html)", name: "body", widget: "markdown", required: false}
+      - label: "兴趣。可以填写多个，用英文逗号分割）"
         name: "interests"
         required: false
         widget: "list"
@@ -65,41 +67,27 @@ collections:
               - {label: "Brand", value: "fab"}
               # - {label: "Academic", value: "ai"}
           - {label: Icon(see https://fontawesome.com/icons). 常用icon "google-scholar" "github", name: icon, widget: string, required: false, default: "google-scholar"}
-      - label: "Organizations"
+      - label: "所在组织"
         name: "organizations"
         required: false
         widget: list
         fields:
           - {label: Organization, name: name, widget: string, required: true, default: "East China Normal University"}
-          # - {label: Link, name: url, widget: string, required: false}
-        
-      - label: "Education"
+          # - {label: Link, name: url, widget: string, required: false} 
+      - label: "教育经历"
         name: "education"
         required: false
         widget: object
         fields:
-          - label: "Courses"
+          - label: "教育经历"
             name: "courses"
             required: false
             widget: list
             fields:
-              - {label: Course, name: course, widget: string, required: true}
-              - {label: Institution, name: institution, widget: string, required: true}
-              - {label: Year, name: year, widget: number, value_type: int, required: false}
-      - {label: "Email", name: "email", widget: "string", required: false}
-
-      # - label: "Display"
-      #   name: "_build"
-      #   required: true
-      #   widget: "object"
-      #   fields: 
-      #   - label: "显示在members页面?"
-      #     name: "list"
-      #     widget: "select"
-      #     default: "always"
-      #     options:
-      #       - {label: "Yes", value: "always"}
-      #       - {label: "No", value: "never"}
+              - {label: "学位和专业", name: course, widget: string, required: true}
+              - {label: "学校", name: institution, widget: string, required: true}
+              - {label: "年份", name: year, widget: string, required: true}
+      - {label: "邮箱", name: "email", widget: "string", required: false}
 
   - name: news
     label: 新闻
@@ -109,10 +97,10 @@ collections:
     filter: {field: "cms_exclude"}
     create: true  # Allow users to create new documents in this collection
     fields:  # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string"}
-      # - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
-      - {label: "Summary", name: "summary", widget: "markdown", required: false}
-      - {label: "Details", name: "body", widget: "markdown"}
+      - {label: "标题", name: "title", widget: "string"}
+      - {label: "子标题", name: "subtitle", widget: "string", required: false}
+      - {label: "概述", name: "summary", widget: "string", required: false}
+      - {label: "详细描述", name: "body", widget: "markdown"}
       # - {label: "Publish this page on", name: "date", widget: "datetime"}
       # - label: "Draft"
       #   name: "draft"
@@ -166,11 +154,11 @@ collections:
     filter: {field: "cms_exclude"}
     create: true  # Allow users to create new documents in this collection
     fields:  # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Abstract", name: "abstract", widget: "text"}
-      - {label: "Where", name: "location", widget: "text"}
-      - {label: "From", name: "date", widget: "datetime"}
-      - {label: "To", name: "date_end", widget: "datetime", default: ""}
+      - {label: "活动名称", name: "title", widget: "string"}
+      - {label: "摘要", name: "abstract", widget: "text"}
+      - {label: "活动地点", name: "location", widget: "text"}
+      - {label: "开始时间", name: "date", widget: "datetime"}
+      - {label: "结束时间", name: "date_end", widget: "datetime", default: ""}
       # - {label: "All day event?", name: "all_day", widget: "boolean", default: false}
       - label: "活动链接"
         name: links
@@ -226,19 +214,19 @@ collections:
         required: false
         widget: object
         fields:
-          - label: "图片名必须为 featured.jpg/png (大小写无所谓)"
+          - label: "上传图片"
             name: "filename"
             widget: "image"
-            # default: "featured"
+            default: "featured"
             required: false
             media_library:
               config:
                 multiple: false
-          # - {label: Caption, name: caption, widget: string, required: false}
+          - {label: Caption, name: caption, widget: string, required: false}
           # - {label: Description for screen readers, name: alt_text, widget: string, required: false}
           # - {label: "Where's the focal point in the image? Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.", name: focal_point, widget: string, required: false, default: "Smart"}
           # - {label: 'Thumbnail Only?', name: preview_only, widget: boolean, default: false, required: false}
-      - {label: "Details", name: "body", widget: "markdown", required: false}
+      - {label: "活动详情", name: "body", widget: "markdown", required: false}
   
   - name: publications
     label: 学术成果
@@ -310,7 +298,7 @@ collections:
         required: false
         widget: object
         fields:
-          - label: "图片名必须为 featured.jpg/png (大小写无所谓)"
+          - label: "上传图片"
             name: "filename"
             widget: "image"
             default: "featured"
@@ -338,7 +326,52 @@ collections:
         name: "url_slides"
         widget: "string"
         required: false
-      
+
+  - name: topics
+    label: 研究方向
+    label_singular: Topic
+    folder: 'content/en/topic'
+    path: '{{slug}}/index'
+    filter: {field: "cms_exclude"}
+    create: true  # Allow users to create new documents in this collection
+    fields:  # The fields each document in this collection have
+      - {label: "研究方向", name: "title", widget: "string"}
+      - {label: "简介", name: "summary", widget: "text", required: false}
+      - {label: "详细介绍", name: "body", widget: "markdown"}
+      # - {label: "Publish on", name: "date", widget: "datetime"}
+      # - label: "Draft"
+      #   name: "draft"
+      #   widget: "boolean"
+      #   default: false
+      #   required: false
+      # - label: "Tags"
+      #   name: "tags"
+      #   required: false
+      #   widget: "list"
+      # - label: "Slide options"
+      #   name: "slides"
+      #   required: false
+      #   widget: object
+      #   fields:
+      #     - { label: "Theme (see https://github.com/hakimel/reveal.js#theming)", name: theme, widget: string, required: false, default: black }
+      - label: "封面图片"
+        name: "image"
+        required: false
+        widget: object
+        fields:
+          - label: "上传图片"
+            name: "filename"
+            widget: "image"
+            default: "featured"
+            required: false
+            media_library:
+              config:
+                multiple: false
+          - {label: Caption, name: caption, widget: string, required: false}
+          # - {label: Description for screen readers, name: alt_text, widget: string, required: false}
+          # - {label: "Where's the focal point in the image? Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.", name: focal_point, widget: string, required: false, default: "Smart"}
+          # - {label: 'Thumbnail Only?', name: preview_only, widget: boolean, default: false, required: false}
+
   # - name: slides
   #   label: Slides
   #   label_singular: Slides

@@ -16,10 +16,14 @@ location: ECNU No.3668 zhongshanbeilu
 tags: []
 links:
   - url: www.baidu.com
-    name: link
+    name: baidu
 event: Event link
+image:
+  caption: ""
+  focal_point: ""
+  preview_only: false
+  filename: featured.jpg
 publishDate: 2017-01-01T00:00:00.000Z
 all_day: false
 ---
-
 Add details here

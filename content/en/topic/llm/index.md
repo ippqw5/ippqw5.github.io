@@ -1,19 +1,12 @@
 ---
-### core metadata begin ###
-title: LLM Testing
-subtitle: 
-summary: 
-# authors: ["Member模板"] # authors: link to user profiles are located in `contented\authors\xxx\index.md`
-# tags: ["LLM"] # tages: help to search
-# categories: ["LLM"] # categories: help to search, similar to tags
-
+title: LLM Technologies
+subtitle: null
+summary: null
 image:
-  placement: 1 # 1 = Full column width, 2 = Out-set, 3 = Screen-width
-  caption: ""
-  focal_point: "Smart" # Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
-  # preview_only: false
-  # alt_text: An optional description of the image for screen readers.
-  filename: neural_networks.jpg  # to load an image from `assets/media/`
-### core metadata end ###
+  filename: llm.jpg
 ---
-Hello World 
+An example of research topic content.
+
+{{% callout note %}}
+蓝色框，note
+{{% /callout %}}

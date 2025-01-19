@@ -3,6 +3,6 @@ title: News Example
 date: 2020-12-01
 featured: true
 image:
-  preview_only: false
+  filename: featured.jpg
 ---
 Congratulations to xxx for winning xxx in the xxx.

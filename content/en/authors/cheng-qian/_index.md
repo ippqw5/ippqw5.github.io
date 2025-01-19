@@ -15,9 +15,10 @@ education:
   courses:
     - course: Master in Software Engineering
       institution: East China Normal University
-      year: 2023
+      year: 2023-2026
     - course: Undergraduate in Mathematics
       institution: East China Normal University
-      year: 2019
+      year: 2019-2023
+email: ippqw5@163.com
 ---
 ...
