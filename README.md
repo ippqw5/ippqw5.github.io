@@ -1,8 +1,10 @@
 # 可信AI实验室 [www.tic-lab.club](https://www.tic-lab.club)
 
-## 信息录入（成员/活动/新闻/学术成果/研究方向）
+# 信息录入 ·成员/活动/新闻/学术成果/研究方向·
 
-信息管理页面：[www.tic-lab.club/admin]() 。github账号登录 or 点击`sign up`注册。
+信息管理页面：[www.tic-lab.club/admin]() 
+
+使用github账号登录 或 使用任意邮箱注册账号
 
 ![cms_login](./assets/media/login.png)
 
@@ -30,9 +32,25 @@
 
 
 
-### 填写(修改)完成后，点击`save`，请等待几秒。系统会自动提交PR到github仓库，等待管理员合并即可。`Save`完成后请不要点 `Publish`。
+### 填写(修改)完成后，点击`save`，请等待几秒，显示`CHANGES SAVED`就可以了。
+
+`Save`后系统会自动提交PR到github仓库，等待管理员合并即可。不需要点`Publish`。
 
 ![cms_new_author_save](./assets/media/cms_new_author_save.png)
 
 ![cms_new_author_saved](./assets/media/cms_new_author_saved.png)
 
+
+# Development
+
+- 框架：[Hugo](https://gohugo.io/)
+- 模板/主题：[HugoBlox bootstrap](https://bootstrap.hugoblox.com/)
+    >  Documentation写的很烂
+- 部署：[Netlify](https://docs.netlify.com/)
+- 域名：[阿里云](https://wanwang.aliyun.com/)
+
+## TODO:
+- 修改网站样式(css)
+- 模板/主题升级(bootstrap -> Tailwind)
+- 视频上传
+- 翻译中文
