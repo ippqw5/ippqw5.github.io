@@ -2,7 +2,7 @@
 title: WENYU YANG
 user_groups:
   - PhD Students
-avatar: img_0430.jpg
+avatar: avatar.jpg
 role: Student
 social:
   - link: https://scholar.google.com/
