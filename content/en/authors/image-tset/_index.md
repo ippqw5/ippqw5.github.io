@@ -3,6 +3,7 @@ title: IMAGE TSET
 user_groups:
   - Master Students
 avatar: avatar.jpg
+role: Student
 social:
   - link: https://scholar.google.com/
     icon_pack: fab
