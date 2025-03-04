@@ -1,5 +1,5 @@
 ---
-title: Verification And Training Of Neural Networks and RL Systems
+title: Fairness and Interpretability
 subtitle: null
 summary: null
 image:
