@@ -2,7 +2,7 @@
 title: Jianhao Bai
 user_groups:
   - Master Students
-avatar: photo.jpg
+avatar: avatar.jpg
 social:
   - link: https://scholar.google.com/
     icon_pack: fab
