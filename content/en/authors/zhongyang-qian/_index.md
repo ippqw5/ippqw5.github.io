@@ -2,7 +2,7 @@
 title: Zhongyang Qian
 user_groups:
   - Master Students
-avatar: 正装白底.jpg
+avatar: avatar.jpg
 role: Student
 social:
   - link: https://scholar.google.com/
