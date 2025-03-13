@@ -1,5 +1,5 @@
 ---
-title: 谢伟
+title: Wei Xie
 user_groups:
   - Master Students
 avatar: 微信图片_20250309175823.jpg
