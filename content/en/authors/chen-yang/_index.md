@@ -1,5 +1,5 @@
 ---
-title: CHEN Yang
+title: Yang Chen
 user_groups:
   - Master Students
 avatar: avatar.jpg
