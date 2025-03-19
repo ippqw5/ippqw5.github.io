@@ -25,4 +25,4 @@ education:
       year: 2019.9～2023.6
 email: bcy@stu.ecnu.edu.cn
 ---
-https://robinyuan810.github.io//cv/
+https://robinyuan810.github.io
