@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Clangd 配置展示</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <pre><code>
+// ---- clangd 语义高亮自定义 ----
+"editor.semanticHighlighting.enabled": true,
+"editor.semanticTokenColorCustomizations": {
+    "enabled": true,
+    "rules": {
+        "type": "#3decc6",
+        "struct": "#3decc6",
+        "class": "#e0c988",
+        "class.defaultLibrary": "#3decc6",
+        "namespace": "#DCDCAA",
+        "function": "#f8825f",
+        "method": "#f8825f",
+        "variable": "#e0edff",
+        "parameter": "#e3cdf3",
+        "variable.readonly": "#ec1d16",
+        "variable.defaultLibrary": "#f8825f",
+        "property": "#74d8f0",
+        "macro": "#BD63C5",
+        "enumMember": "#ec1d16"
+    }
+},
+
+// TextMate 层
+"editor.tokenColorCustomizations": {
+    "textMateRules": [
+        { "scope": "keyword.other.using.directive.cpp", "settings": { "foreground": "#ae7feb"} },
+        { "scope": "keyword.control.directive.define.cpp", "settings": { "foreground": "#8fbbfc"} },
+        { "scope": "keyword.control.directive.include.cpp", "settings": { "foreground": "#8fbbfc"} },
+        { "scope": "string.quoted.other.lt-gt.include.cpp", "settings": { "foreground": "#8ed7d0"} },
+        { "scope": "storage.type.built-in.primitive.cpp", "settings": { "foreground": "#bd63c5"} },
+        { "scope": "storage.modifier.specifier.const.cpp", "settings": { "foreground": "#bd63c5"} }
+    ]
+}
+    </code></pre>
+</body>
+</html>
